@@ -6,6 +6,7 @@ import Detail from "./pages/Detail"
 import Footer from "./components/Footer"
 import Payment from "./pages/Payment"
 import Navbar from "./components/Navbar"
+import './App.css'
 
  const App = () => {
 
