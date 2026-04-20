@@ -1,9 +1,10 @@
 import React from 'react'
+import HeroSection from '../components/HeroSection'
 
 const Home = () => {
   return (
-    <div>
-      
+    <div className='w-full bg-[#F6F7F9] '>
+      <HeroSection />
     </div>
   )
 }

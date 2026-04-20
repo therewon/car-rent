@@ -6,9 +6,9 @@ import { BrowserRouter } from 'react-router-dom'
 import { ClerkProvider } from '@clerk/react'
 
 createRoot(document.getElementById('root')).render(
-  <ClerkProvider>
-    <BrowserRouter>
+  <BrowserRouter>
+    <ClerkProvider>
       <App />
-    </BrowserRouter>
-  </ClerkProvider>,
+    </ClerkProvider>,
+  </BrowserRouter>
 )

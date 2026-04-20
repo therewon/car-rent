@@ -5,13 +5,14 @@ import Category from "./pages/Category"
 import Detail from "./pages/Detail"
 import Footer from "./components/Footer"
 import Payment from "./pages/Payment"
+import Navbar from "./components/Navbar"
 
  const App = () => {
 
 
   return(
     <>
-      <Header />
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/category" element={<Category />} />
