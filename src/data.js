@@ -1,3 +1,13 @@
+import Koenigsegg from './assets/Koenigsegg.png'
+import NissanGTR from './assets/Nissan-GT.png'
+import RollsRoyce from './assets/Rolls-Royce.png'
+import AllNewRush from './assets/AllNewRush.png'
+import CRV from './assets/cr-v.png'
+import AllNewTerios from './assets/AllNewTerios.png'
+import MGZX from './assets/MG-Zx.png'
+import NewMGZS from './assets/MG-ZS.png'
+import MGZXExcite from './assets/MG-ZS-2.png'
+
 const cars = [
   {
     id: 1,
@@ -9,7 +19,7 @@ const cars = [
     price: 99,
     oldPrice: null,
     favorite: true,
-    image: "Koenigsegg"
+    image: Koenigsegg
   },
   {
     id: 2,
@@ -21,7 +31,7 @@ const cars = [
     price: 80,
     oldPrice: 100,
     favorite: false,
-    image: "Nissan GT-R"
+    image: NissanGTR
   },
   {
     id: 3,
@@ -33,7 +43,7 @@ const cars = [
     price: 96,
     oldPrice: null,
     favorite: true,
-    image: "Rolls-Royce"
+    image: RollsRoyce
   },
   {
     id: 4,
@@ -45,7 +55,7 @@ const cars = [
     price: 80,
     oldPrice: 100,
     favorite: false,
-    image: "Nissan GT-R"
+    image: NissanGTR
   },
   {
     id: 5,
@@ -57,7 +67,7 @@ const cars = [
     price: 72,
     oldPrice: 80,
     favorite: false,
-    image: "All New Rush"
+    image: AllNewRush
   },
   {
     id: 6,
@@ -69,7 +79,7 @@ const cars = [
     price: 80,
     oldPrice: null,
     favorite: true,
-    image: "CR-V"
+    image: CRV
   },
   {
     id: 7,
@@ -81,7 +91,7 @@ const cars = [
     price: 74,
     oldPrice: null,
     favorite: false,
-    image: "All New Terios"
+    image: AllNewTerios
   },
   {
     id: 8,
@@ -93,7 +103,7 @@ const cars = [
     price: 80,
     oldPrice: null,
     favorite: true,
-    image: "CR-V"
+    image: CRV
   },
   {
     id: 9,
@@ -105,7 +115,7 @@ const cars = [
     price: 76,
     oldPrice: 80,
     favorite: true,
-    image: "MG ZX Exclusive"
+    image: MGZX
   },
   {
     id: 10,
@@ -117,7 +127,7 @@ const cars = [
     price: 80,
     oldPrice: null,
     favorite: false,
-    image: "New MGZS"
+    image: NewMGZS
   },
   {
     id: 11,
@@ -129,7 +139,7 @@ const cars = [
     price: 74,
     oldPrice: null,
     favorite: true,
-    image: "MG ZX Excite"
+    image: MGZXExcite
   },
   {
     id: 12,
@@ -141,7 +151,7 @@ const cars = [
     price: 80,
     oldPrice: null,
     favorite: false,
-    image: "New MGZS"
+    image: NewMGZS
   }
 ]
 export default cars
