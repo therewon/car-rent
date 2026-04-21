@@ -1,4 +1,4 @@
-export const cars = [
+const cars = [
   {
     id: 1,
     name: "Koenigsegg",
@@ -144,3 +144,4 @@ export const cars = [
     image: "New MGZS"
   }
 ]
+export default cars
