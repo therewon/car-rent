@@ -21,7 +21,7 @@ const RecomendationCar = () => {
   <div className='my-10 sm:my-12 lg:my-16 px-4 flex flex-col sm:flex-row justify-between items-center gap-4'>
     <div className='hidden sm:block'></div>
 
-    <Link to='/category' className='bg-[#3563E9] rounded text-white px-5 py-2.5 w-full sm:w-auto'>
+    <Link to='/category' onClick={() => window.scrollTo({top: 0,behavior: "smooth"})}  className='bg-[#3563E9] rounded text-white px-5 py-2.5 w-full sm:w-auto'>
       Show more car
     </Link>
 

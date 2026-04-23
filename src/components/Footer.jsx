@@ -7,7 +7,7 @@ const Footer = () => {
     <div class="flex flex-col md:flex-row items-start justify-between gap-10 py-10 border-b border-gray-500/30 text-gray-500 w-full max-w-7xl mx-auto">
         <div>
             <img class="w-34 md:w-32" src={Logo} alt="dummyLogoColored" />
-            <p class="max-w-[410px] mt-6">Our vision is to provide convenience and help increase your sales business.</p>
+            <p class="max-w-102.5 mt-6">Our vision is to provide convenience and help increase your sales business.</p>
         </div>
         <div class="flex flex-wrap justify-between w-full md:w-[45%] gap-5">
             <div>

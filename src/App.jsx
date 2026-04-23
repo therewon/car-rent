@@ -6,6 +6,7 @@ import Footer from "./components/Footer"
 import Payment from "./pages/Payment"
 import Navbar from "./components/Navbar"
 import './App.css'
+import LikedCars from "./pages/LikedCars"
 
  const App = () => {
 
@@ -16,8 +17,9 @@ import './App.css'
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/category" element={<Category />} />
-        <Route path="/categroy/:id" element={<Detail />} />
-        <Route path="/payment" element={<Payment />} />
+        <Route path="/category/:id" element={<Detail />} />
+        <Route path="/payment/:id" element={<Payment />} />
+        <Route path="/category/liked-cars" element={<LikedCars />} />
       </Routes>
       <Footer />
     </>

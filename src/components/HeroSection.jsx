@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <div className='max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 px-4 sm:px-6 lg:px-0 gap-4 py-6 sm:py-8'>
       
-      <div className='hero-banner-ks text-white p-5 sm:p-6 md:p-8 rounded-2xl flex flex-col justify-between min-h-[320px] sm:min-h-[360px] md:min-h-[400px]'>
+      <div className='hero-banner-ks text-white p-5 sm:p-6 md:p-8 rounded-2xl flex flex-col justify-between min-h-80 sm:min-h-90 md:min-h-100'>
         <div className='w-full sm:w-[70%] lg:w-1/2 self-start'>
           <h2 className='text-2xl sm:text-3xl font-semibold mb-3 sm:mb-4'>
             The Best Platform for Car Rental
@@ -22,11 +22,11 @@ const HeroSection = () => {
         <img
           src={FirstCar}
           alt=""
-          className='self-center w-full max-w-[260px] sm:max-w-[320px] md:max-w-[380px] mt-6 object-contain'
+          className='self-center w-full max-w-65 sm:max-w-[320px] md:max-w-95 mt-6 object-contain'
         />
       </div>
 
-      <div className='hero-banner-gt text-white p-5 sm:p-6 md:p-8 rounded-2xl hidden lg:flex flex-col justify-between min-h-[320px] sm:min-h-[360px] md:min-h-[400px]'>
+      <div className='hero-banner-gt text-white p-5 sm:p-6 md:p-8 rounded-2xl hidden lg:flex flex-col justify-between min-h-80 sm:min-h-90 md:min-h-100'>
         <div className='w-full sm:w-[70%] lg:w-1/2 self-start'>
           <h2 className='text-2xl sm:text-3xl font-semibold mb-3 sm:mb-4'>
             The Best Platform for Car Rental
@@ -42,7 +42,7 @@ const HeroSection = () => {
         <img
           src={SecondCar}
           alt=""
-          className='self-center w-full max-w-[260px] sm:max-w-[320px] md:max-w-[380px] mt-6 object-contain'
+          className='self-center w-full max-w-65 sm:max-w-[320px] md:max-w-95 mt-6 object-contain'
         />
       </div>
     </div>

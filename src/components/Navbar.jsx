@@ -7,10 +7,15 @@ import NotificationIcon from '../assets/notification.png'
 import SettingIcon from '../assets/setting-2.png'
 import { Show, SignInButton, SignUpButton, UserButton } from '@clerk/react'
 import { Heart, Bell, Settings, Search, SlidersHorizontal } from "lucide-react";
-import { Link, Links } from 'react-router-dom'
+import { Link, Links, useNavigate } from 'react-router-dom'
+import { useStoreContext } from '../context/StoreContext.jsx'
 
 
 const Navbar = () => {
+  const {setIsFilterOpen,search,setSearch} = useStoreContext()
+  const navigate = useNavigate()
+  
+
   return (
     <header className="w-full border-b border-gray-200">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-8 md:px-6 lg:px-8">
@@ -28,6 +33,11 @@ const Navbar = () => {
                   type="text"
                   placeholder="Search something here"
                   className="w-full bg-transparent text-sm outline-none placeholder:text-gray-400"
+                  value={search}
+                  onChange={(e)=> {
+                    setSearch(e.target.value)
+                    navigate('/category')
+                  } }
                 />
               </div>
 
@@ -39,9 +49,9 @@ const Navbar = () => {
         </div>
 
         <div className="hidden items-center gap-3 md:flex">
-          <button className="flex h-11 w-11 items-center justify-center rounded-full border border-gray-200 text-gray-500 transition hover:bg-gray-50">
+          <Link to='/category/liked-cars' className="flex h-11 w-11 items-center justify-center rounded-full border border-gray-200 text-gray-500 transition hover:bg-gray-50">
             <Heart size={18} />
-          </button>
+          </Link>
 
           <div className="relative">
             <button className="flex h-11 w-11 items-center justify-center rounded-full border border-gray-200 text-gray-500 transition hover:bg-gray-50">
@@ -88,7 +98,7 @@ const Navbar = () => {
             />
           </div>
 
-          <button className="flex h-16 w-16 items-center justify-center rounded-3xl border border-gray-200 text-gray-500 shrink-0">
+          <button className="flex h-16 w-16 items-center justify-center rounded-3xl border border-gray-200 text-gray-500 shrink-0" onClick={()=> {setIsFilterOpen(true);navigate('/category')}}>
             <SlidersHorizontal size={28} />
           </button>
         </div>
