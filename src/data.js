@@ -2,7 +2,8 @@ import Koenigsegg from './assets/Koenigsegg.png'
 import NissanGTR from './assets/Nissan-GT.png'
 import RollsRoyce from './assets/Rolls-Royce.png'
 import AllNewRush from './assets/AllNewRush.png'
-import CRV from './assets/cr-v.png'
+import CRV from './assets/CR-V.png'
+import CRVBlack from './assets/CR-V-black.png'
 import AllNewTerios from './assets/AllNewTerios.png'
 import MGZX from './assets/MG-Zx.png'
 import NewMGZS from './assets/MG-ZS.png'
@@ -201,7 +202,7 @@ const cars = [
     price: 80,
     oldPrice: null,
     favorite: true,
-    image: CRV,
+    image: CRVBlack,
     rating: 4.7,
     description: "The CR-V offers a smooth and practical SUV experience with a spacious interior and dependable performance. It is designed to provide comfort, convenience, and versatility for drivers who want an easy and enjoyable everyday vehicle.",
     reviews: [
